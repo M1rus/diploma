@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="601.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.UserController">
+   <children>
+      <TableView fx:id="userTableView" layoutX="31.0" layoutY="284.0" prefHeight="290.0" prefWidth="538.0" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="284.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="loginField" layoutX="227.0" layoutY="36.0" />
+      <TextField fx:id="passwordField" layoutX="227.0" layoutY="71.0" />
+      <TextField fx:id="nameField" layoutX="227.0" layoutY="104.0" />
+      <TextField fx:id="surnameField" layoutX="227.0" layoutY="140.0" />
+      <Label layoutX="158.0" layoutY="40.0" text="Логін" />
+      <Label layoutX="161.0" layoutY="75.0" text="Пароль" />
+      <Label layoutX="161.0" layoutY="108.0" text="Ім'я" />
+      <Label layoutX="160.0" layoutY="144.0" text="Прізвище" />
+      <Button fx:id="registerButton" layoutX="125.0" layoutY="238.0" mnemonicParsing="false" onAction="#registerButtonOnAction" text="Зареєструвати" />
+      <Button fx:id="deleteButton" layoutX="227.0" layoutY="238.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" text="Видалити" />
+      <Button fx:id="cancelButton" layoutX="411.0" layoutY="238.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" text="Відмінити" />
+      <ComboBox fx:id="roleComboBox" layoutX="227.0" layoutY="171.0" prefWidth="150.0" />
+      <Label layoutX="160.0" layoutY="175.0" text="Роль" />
+      <Button fx:id="refreshButton" layoutX="507.0" layoutY="238.0" mnemonicParsing="false" text="Оновити" />
+      <Button fx:id="checkButton" layoutX="463.0" layoutY="36.0" mnemonicParsing="false" onAction="#checkButtonOnAction" text="Перевірити" />
+      <Label fx:id="errorLabel" layoutX="286.0" layoutY="14.0" AnchorPane.leftAnchor="286.0" AnchorPane.rightAnchor="286.0" />
+      <Button fx:id="editButton" layoutX="302.0" layoutY="238.0" mnemonicParsing="false" onAction="#editButtonOnAction" text="Змінити" />
+   </children>
+</AnchorPane>

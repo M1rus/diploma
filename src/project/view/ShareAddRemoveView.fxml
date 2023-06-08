@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.ShareAddRemoveController">
+   <children>
+      <Label alignment="CENTER" layoutX="236.0" layoutY="14.0" text="Паї" AnchorPane.bottomAnchor="368.4" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="236.8" AnchorPane.topAnchor="14.0" />
+      <Button fx:id="addButton" layoutX="119.0" layoutY="344.0" mnemonicParsing="false" onAction="#addButtonOnAction" text="Додати" />
+      <Button fx:id="cancelButton" layoutX="407.0" layoutY="344.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" text="Скасувати" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="169.0" layoutY="41.0" prefHeight="18.0" prefWidth="261.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="169.39999999999998" />
+      <Label layoutX="107.0" layoutY="72.0" text="Номер пая" />
+      <TextField fx:id="shareNumField" layoutX="264.0" layoutY="68.0" />
+      <TextField fx:id="rentSumField" layoutX="263.0" layoutY="303.0" />
+      <Label fx:id="availabilityLabel" layoutX="493.0" layoutY="178.0" prefHeight="18.0" prefWidth="98.0" />
+      <Button fx:id="removeButton" layoutX="193.0" layoutY="344.0" mnemonicParsing="false" onAction="#removeButtonOnAction" text="Прибрати" />
+      <Label layoutX="225.0" layoutY="357.0" prefHeight="18.0" prefWidth="150.0" />
+      <Label layoutX="107.0" layoutY="307.0" text="Сума ренти" />
+      <Label layoutX="107.0" layoutY="111.0" text="Площа" />
+      <ComboBox fx:id="typeComboBox" editable="true" layoutX="264.0" layoutY="152.0" prefWidth="150.0" />
+      <Label layoutX="107.0" layoutY="156.0" text="Тип" />
+      <Label layoutX="107.0" layoutY="200.0" text="Дата отриання" />
+      <Label layoutX="107.0" layoutY="237.0" text="Інформація про власника" />
+      <Button fx:id="checkButton" layoutX="467.0" layoutY="68.0" mnemonicParsing="false" onAction="#checkButtonOnAction" text="Перевірити" />
+      <Button fx:id="abortButton" layoutX="482.0" layoutY="116.0" mnemonicParsing="false" onAction="#abortButtonOnAction" text="Відкат" />
+      <Button fx:id="editButton" layoutX="299.0" layoutY="344.0" mnemonicParsing="false" onAction="#editButtonOnAction" text="Редагувати" />
+      <TextField fx:id="areaField" layoutX="264.0" layoutY="107.0" />
+      <DatePicker fx:id="acquisitionDatePicker" layoutX="263.0" layoutY="195.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="105.0" layoutY="272.0" text="Статус" />
+      <ComboBox fx:id="statusComboBox" editable="true" layoutX="262.0" layoutY="268.0" prefWidth="150.0" />
+      <TextField fx:id="ownerInfoField" layoutX="263.0" layoutY="233.0" />
+   </children>
+</AnchorPane>

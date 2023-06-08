@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.SalesAddController">
+   <children>
+      <Label alignment="CENTER" layoutX="236.0" layoutY="14.0" text="Додати продаж" AnchorPane.bottomAnchor="368.4" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="236.8" AnchorPane.topAnchor="14.0" />
+      <ComboBox fx:id="productNameComboBar" layoutX="225.0" layoutY="165.0" prefWidth="150.0" />
+      <Label layoutX="426.0" layoutY="178.0" prefHeight="18.0" prefWidth="55.0" text="Доступно:" />
+      <Label layoutX="152.0" layoutY="169.0" text="Продукція" />
+      <Button fx:id="addButton" layoutX="215.0" layoutY="320.0" mnemonicParsing="false" onAction="#addButtonOnAction" text="Додати" />
+      <Button fx:id="cancelButton" layoutX="315.0" layoutY="320.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" text="Скасувати" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="169.0" layoutY="41.0" prefHeight="18.0" prefWidth="261.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="169.39999999999998" />
+      <Label layoutX="144.0" layoutY="88.0" text="Дані покупця" />
+      <TextField fx:id="customerInfo" layoutX="225.0" layoutY="84.0" />
+      <TextField fx:id="quantityField" layoutX="225.0" layoutY="236.0" />
+      <Label layoutX="402.0" layoutY="97.0" prefHeight="18.0" prefWidth="78.0" text="Загальна ціна:" />
+      <Button fx:id="totalPriceButton" layoutX="453.0" layoutY="59.0" mnemonicParsing="false" onAction="#totalPriceButtonOnAction" text="Перевірити" />
+      <Button fx:id="checkAvailabilityButton" layoutX="453.0" layoutY="139.0" mnemonicParsing="false" onAction="#checkAvailabilityButtonOnAction" text="Перевірити" />
+      <Label fx:id="totalPriceLabel" layoutX="493.0" layoutY="98.0" prefHeight="18.0" prefWidth="98.0" />
+      <Label fx:id="availabilityLabel" layoutX="493.0" layoutY="178.0" prefHeight="18.0" prefWidth="98.0" />
+   </children>
+</AnchorPane>

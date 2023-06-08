@@ -1,0 +1,50 @@
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-border-radius: 4px;
+    -fx-border-color: #007bff;
+    -fx-border-width: 1px;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+    -fx-border-color: #0056b3;
+}
+
+.button:pressed {
+    -fx-background-color: #003d80;
+    -fx-border-color: #003d80;
+}
+.grid-pane {
+    -fx-background-color: rgba(153, 239, 255, 0.95);
+    -fx-border-color: rgba(34, 55, 59, 0.95);
+}
+.label {
+    -fx-font-family: "sans-serif";
+    -fx-font-size: 28px;
+    -fx-font-weight: lighter;
+    -fx-text-fill: rgba(34, 55, 59, 0.95);
+}
+.table-view {
+    -fx-background-color: #ffffff; /* колір фону */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #007bff; /* колір фону заголовків стовпців */
+    -fx-text-fill: #ffffff; /* колір тексту заголовків стовпців */
+}
+
+.table-view .column-header, .table-view .table-cell {
+    -fx-font-size: 14px; /* розмір шрифту заголовків стовпців та комірок */
+    -fx-text-fill: #000000; /* колір тексту заголовків стовпців та комірок */
+}
+
+.table-view .table-cell:odd {
+    -fx-background-color: #f2f2f2; /* колір фону непарних комірок */
+}
+
+.table-view .table-cell:selected {
+    -fx-background-color: #007bff; /* колір фону виділених комірок */
+    -fx-text-fill: #ffffff; /* колір тексту виділених комірок */
+}
